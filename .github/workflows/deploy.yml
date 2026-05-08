@@ -1,10 +1,10 @@
 name: Deploy Worker
 
-on:
+于:
   workflow_dispatch:
   repository_dispatch:
   push:
-    branches:
+    分支:
       - main
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '21'
+          node-version: '22'
       
       - name: Install dependencies
         run: npm install
